@@ -1,2 +1,2 @@
-# PyGame-Practice
-Практика 10. PyGame
+# pg-Practice
+Практика 10. pg

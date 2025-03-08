@@ -1,25 +1,23 @@
-import pygame
+import pygame as pg
 import sys
 
-pygame.init()
+pg.init()
 
 WIDTH, HEIGHT = 1300, 700
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Синє небо")
+screen = pg.display.set_mode((WIDTH, HEIGHT))
+pg.display.set_caption("Синє небо")
 
-BLUE = (0, 0, 255)
+BLUE = (255, 255, 255)
 
 running = True
 while running:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
             running = False
     
     screen.fill(BLUE)
     
-    pygame.display.flip()
+    pg.display.flip()
 
-pygame.quit()
+pg.quit()
 sys.exit()
-
-
