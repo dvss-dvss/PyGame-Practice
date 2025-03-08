@@ -5,7 +5,7 @@ pg.init()
 
 screen_width, screen_height = 800, 600
 screen = pg.display.set_mode((screen_width, screen_height))
-pg.display.set_caption("Ship")
+pg.display.set_caption("Rocket")
 
 background_color = (30, 30, 30)
 
