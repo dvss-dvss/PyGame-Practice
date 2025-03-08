@@ -10,7 +10,7 @@ screen = pg.display.set_mode((screen_width, screen_height))
 pg.display.set_caption("Rocket Game")
 
 
-background_color = (30, 30, 30)
+background_color = (31, 31, 31)
 
 
 rocket = pg.image.load('ship.bmp')
