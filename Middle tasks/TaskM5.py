@@ -7,11 +7,11 @@ WIDTH, HEIGHT = 800, 600
 screen = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption("Лови мяч!")
 
-player_img = pg.image.load("Корзина.bmp")
+player_img = pg.image.load("Middle tasks\Корзина.bmp")
 player_img = pg.transform.scale(player_img, (100, 20))
 player = pg.Rect(WIDTH // 2 - 50, HEIGHT - 30, 100, 20)
 
-ball_img = pg.image.load("мяч.bmp")
+ball_img = pg.image.load("Middle tasks\мяч.bmp")
 ball_img = pg.transform.scale(ball_img, (30, 30))
 ball = pg.Rect(random.randint(20, WIDTH - 50), 0, 30, 30)
 

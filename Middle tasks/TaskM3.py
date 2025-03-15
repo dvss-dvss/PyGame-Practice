@@ -7,7 +7,7 @@ WIDTH, HEIGHT = 800, 600
 screen = pg.display.set_mode((WIDTH, HEIGHT))
 pg.display.set_caption("Дождь")
 
-drop_img = pg.image.load("капля.bmp")
+drop_img = pg.image.load("Middle tasks\капля.bmp")
 
 drop_width, drop_height = drop_img.get_size()
 

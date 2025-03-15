@@ -9,7 +9,7 @@ pg.display.set_caption("Rocket")
 
 background_color = (30, 30, 30)
 
-ship = pg.image.load('rocket.bmp')
+ship = pg.image.load('Easy tasks/rocket.bmp')
 ship_width, ship_height = 100, 100
 ship = pg.transform.scale(ship, (ship_width, ship_height))
 ship_rect = ship.get_rect(midleft=(50, screen_height // 2))

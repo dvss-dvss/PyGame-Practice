@@ -9,7 +9,7 @@ pg.display.set_caption("Star Grid")
 
 background_color = (0, 0, 0)
 
-star = pg.image.load('star.bmp')
+star = pg.image.load('Middle tasks\star.bmp')
 star_size = 50
 star = pg.transform.scale(star, (star_size, star_size))
 

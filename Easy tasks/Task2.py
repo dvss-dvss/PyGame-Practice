@@ -11,7 +11,7 @@ background_color = (30, 30, 30)
 screen.fill(background_color)
 
 
-character = pg.image.load('rocket.bmp')
+character = pg.image.load('Easy tasks/rocket.bmp')
 character = pg.transform.scale(character, (300, 300))
 character_rect = character.get_rect(center=(screen_width // 2, screen_height // 2))
 

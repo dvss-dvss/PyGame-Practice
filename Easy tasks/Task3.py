@@ -13,7 +13,7 @@ pg.display.set_caption("Rocket Game")
 background_color = (31, 31, 31)
 
 
-rocket = pg.image.load('rocket.bmp')
+rocket = pg.image.load('Easy tasks/rocket.bmp')
 rocket_width, rocket_height = 100, 100
 rocket = pg.transform.scale(rocket, (rocket_width, rocket_height))
 
