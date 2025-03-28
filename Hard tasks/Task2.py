@@ -31,7 +31,7 @@ clock = pg.time.Clock()
 keys = {pg.K_UP: False, pg.K_DOWN: False}
 
 while True:
-    screen.fill((255, 255, 255))
+    screen.fill((25, 25, 25))
 
     for event in pg.event.get():
         if event.type == pg.QUIT:
