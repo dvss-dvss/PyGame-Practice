@@ -12,7 +12,10 @@ class Alien(Sprite):
         self.settings = ai_game.settings
 
         # Завантаження зображення та вызначення rect
-        self.image = pg.image.load("Hard tasks\Aliens\images/alien.bmp")
+        filename = (
+            "Hard tasks/Aliens/images/" + "alien-dark.bmp" if self.settings.dark_mode else "alien.bmp"
+        )
+        self.image = pg.image.load(filename)
         self.rect = self.image.get_rect()
 
         # Кошен новий прибулець з'являеться в ливому верхньому кути екрану

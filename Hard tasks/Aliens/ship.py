@@ -13,7 +13,10 @@ class Ship(Sprite):
         self.screen_rect = ai_game.screen.get_rect()
 
         # Завантаження зобравження корабля и отримання поверхни
-        self.image = pg.image.load("Hard tasks\Aliens\images/ship.bmp")
+        filename = (
+            "Hard tasks/Aliens/images/" + "ship-dark.bmp" if self.settings.dark_mode else "ship.bmp"
+        )
+        self.image = pg.image.load(filename)
         self.rect = self.image.get_rect()
         # Кожен новий корабель з'являэться в нижний чатсини екрану
         self.rect.midbottom = self.screen_rect.midbottom

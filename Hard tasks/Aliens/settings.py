@@ -1,4 +1,3 @@
-
 class Settings:
     """Класс для збригання всих налаштувань гри"""
 
@@ -6,7 +5,8 @@ class Settings:
        #Параметри екрану
        self.screen_width = 1300
        self.screen_height = 700
-       self.bg_color = (230, 230, 230)
+       self.dark_mode = True
+       self.bg_color = (0, 0, 0) if self.dark_mode else (230, 230, 230)
 
        # Параметри корабля
        self.ship_limit = 3
@@ -14,11 +14,19 @@ class Settings:
        # Параметри снаряду
        self.bullet_width = 3
        self.bullet_height = 15
-       self.bullet_color = (60, 60, 60)
+       self.bullet_color = (255, 0, 0) if self.dark_mode else (60, 60, 60)
        self.bullets_allowed = 3
 
        # Параметри прибульців
        self.fleet_drop_speed = 10
+
+       # Параметри зірок
+       self.star_limit = 100
+       self.star_speed = 0.5
+       self.star_start_color = 200
+       self.star_color_limit = 256
+       self.star_color_step = 0.15
+       self.star_radius = 3
 
        # Темп пришвидшення гри
        self.speedup_scale = 1.1
